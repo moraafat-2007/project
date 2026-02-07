@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"> <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+<title>Secure Document</title>
+</head>
+
+<body>
+   <header>
+     <h1>Almdrasa High School</h1>
+   
+     <ul>
+    <li><a href="main bage.html">Home</a></li>
+    <li><a href="Schedual bage .html">Class Schedule</a></li>
+    <li><a href="input&output bage.html">Contact Us</a></li>
+     </ul>
+   </header>
+
+   <main>
+   <h2>Contact Us </h2>
+
+  <form action="submit_contact.php" method="post">
+
+   <fieldset>
+      <legend>Contact Information</legend>
+
+      <label for="name">Name:</label>
+      <input  type="text" id="name" name="name" required/>
+
+      <label for="age">Age:</label>
+      <input id="age" type="number" name="age" min="18" max="99"/>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@domain.com" required/>
+
+      <label for="reason">Reason for contact:</label>
+      <select id="reason">
+         <option value="">Select a reason</option>
+         <option value="inquiry">General Inquiry</option>
+         <option value="support">Support</option>
+         <option value="feedback">Feedback</option>
+         <option value="other">Other</option>
+      </select>
+
+   </fieldset>
+
+  <fieldset>
+    <legend>Message</legend>
+
+    <label for="Subject " >Subject:</label>
+    <input type="text" id="Subject" name="Subject" >
+
+   <label for="Your Message"> Your Message:</label>
+   <textarea name="Your Message" id="Your Message" row="6" colum="55" >
+      </textarea>
+
+ </fieldset>
+
+<fieldset>
+   <legend>Preferences</legend>
+
+   <p>Preferences Contact Method:</p>
+   
+   <input type="radio" id="Email" name="Contact" value="email">
+   <label for="Contact Email">Email</label>
+
+   <input type="radio" id="Phone" name="Contact" value="phone">
+   <label for="Contact Phone">Phone </label>
+
+</br>
+</br>
+
+   <input type="checkbox" id="Subscrib" name="Subscrib" required>
+   <label for="Subscrib">Subscribe to our newsletter</label>
+
+
+</fieldset>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>    
+  
+  </form>
+    
+
+   </main>
+
+<footer>
+  <p>© 2024 Almdrasa High School</p>  
+</footer>
+</body>
+</html>
